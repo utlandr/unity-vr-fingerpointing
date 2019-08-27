@@ -5,6 +5,12 @@ using UnityEngine.Networking;
 
 public class PlayerUnit : NetworkBehaviour
 {
+
+    public GameObject camRig = null;
+    public Camera leftEye = null;
+    public Camera rightEye = null;
+
+
     // Start is called before the first frame update
     void Start()
     {
@@ -16,6 +22,7 @@ public class PlayerUnit : NetworkBehaviour
     {
         if( hasAuthority == false )
         {
+            Destroy(camRig);
             return;
         }
 
