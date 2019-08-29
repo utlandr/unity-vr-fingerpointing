@@ -6,29 +6,33 @@ using UnityEngine.Networking;
 public class PlayerUnit : NetworkBehaviour
 {
 
-    public GameObject camRig = null;
-    public Camera leftEye = null;
-    public Camera rightEye = null;
+    public GameObject playerCamera = null;
 
+    // Setup components to ban (scripts and things)
+    [SerializeField]
+    Behaviour[] componentsToDisable;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        if (isLocalPlayer == false)
+        {
+            for ( int i = 0; i < componentsToDisable.Length; i++ )
+            {
+                componentsToDisable[i].enabled = false;
+            }
+        }    
     }
 
     // Update is called once per frame
     void Update()
     {
-        if( hasAuthority == false )
+        if( isLocalPlayer == false )
         {
-            Destroy(camRig);
+            //Destroy(playerCamera.getComponent());
             return;
         }
 
-        if( Input.GetKeyDown(KeyCode.Space) )
-        {
-            this.transform.Translate(0, 1, 0);
-        }
+
     }
 }
