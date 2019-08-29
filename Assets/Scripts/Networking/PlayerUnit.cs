@@ -8,10 +8,11 @@ public class PlayerUnit : NetworkBehaviour
 
     public GameObject playerCamera = null;
 
-    // Setup components to ban (scripts and things)
+    // Setup components/objects to disable (i.e. only the
+    // local client instance should have)
     [SerializeField]
     private Behaviour[] componentsToDisable;
-    
+
     // Start is called before the first frame update
     void Start()
     {
