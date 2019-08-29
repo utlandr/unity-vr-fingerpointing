@@ -10,8 +10,8 @@ public class PlayerUnit : NetworkBehaviour
 
     // Setup components to ban (scripts and things)
     [SerializeField]
-    Behaviour[] componentsToDisable;
-
+    private Behaviour[] componentsToDisable;
+    
     // Start is called before the first frame update
     void Start()
     {
