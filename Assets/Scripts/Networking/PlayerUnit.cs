@@ -21,6 +21,9 @@ public class PlayerUnit : NetworkBehaviour
             {
                 componentsToDisable[i].enabled = false;
             }
+        }
+        else{
+
         }    
     }
 
@@ -29,7 +32,6 @@ public class PlayerUnit : NetworkBehaviour
     {
         if( isLocalPlayer == false )
         {
-            //Destroy(playerCamera.getComponent());
             return;
         }
 

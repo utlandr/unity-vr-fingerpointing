@@ -175,7 +175,7 @@ MonoBehaviour:
   m_ScriptCRCCheck: 1
   m_MaxDelay: 0.01
   m_LogLevel: 2
-  m_PlayerPrefab: {fileID: 6264780890929581795, guid: 2bbab6d468b72e74194b0178264edf41,
+  m_PlayerPrefab: {fileID: 6263257155466315103, guid: 80df1084cbdcc9e4e9caff8c7fcdcd39,
     type: 3}
   m_AutoCreatePlayer: 1
   m_PlayerSpawnMethod: 1
@@ -344,7 +344,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!64 &1727335166
 MeshCollider:
   m_ObjectHideFlags: 0
