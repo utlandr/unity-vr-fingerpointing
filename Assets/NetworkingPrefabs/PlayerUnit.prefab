@@ -5177,7 +5177,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerCamera: {fileID: 0}
   componentsToDisable:
-  - {fileID: 0}
   - {fileID: 6263257155054594222}
 --- !u!114 &7404843645480943280
 MonoBehaviour:
