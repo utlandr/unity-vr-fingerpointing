@@ -18,7 +18,7 @@ public class PlayerConnectionObject : NetworkBehaviour
     {
         if( isLocalPlayer == false )
         {
-            //return;    
+            return;    
         }
 
         // Spawn unit
