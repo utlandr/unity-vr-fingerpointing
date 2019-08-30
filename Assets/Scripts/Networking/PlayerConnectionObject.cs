@@ -20,7 +20,7 @@ public class PlayerConnectionObject : NetworkBehaviour
         {
             return;    
         }
-        
+
         // Spawn unit
         Debug.Log("PlayerObject::Start -- VR Unit has entered the scene.");
         CmdSpawnMyUnit();

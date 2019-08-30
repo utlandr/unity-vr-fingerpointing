@@ -12,8 +12,7 @@ public class PlayerUnit : NetworkBehaviour
     // Start is called before the first frame update
     void Start()
     {
-       
-        if (isLocalPlayer == false)
+        if ( localPlayerAuthority == false )
         {
             for ( int i = 0; i < componentsToDisable.Length; i++ )
             {
