@@ -16,17 +16,11 @@ public class PlayerConnectionObject : NetworkBehaviour
 
     void Start()
     {
-        if (isLocalPlayer == false)
+        if( isLocalPlayer == false )
         {
-            for ( int i = 0; i < componentsToDisable.Length; i++ )
-            {
-                componentsToDisable[i].enabled = false;
-            }
+            return;    
         }
-        else
-        {
-
-        }    
+        
         // Spawn unit
         Debug.Log("PlayerObject::Start -- VR Unit has entered the scene.");
         CmdSpawnMyUnit();

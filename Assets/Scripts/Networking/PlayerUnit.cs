@@ -5,12 +5,22 @@ using UnityEngine.Networking;
 
 public class PlayerUnit : NetworkBehaviour
 {
-
+    
+    [SerializeField]
+    Behaviour[] componentsToDisable;
 
     // Start is called before the first frame update
     void Start()
     {
        
+        if (isLocalPlayer == false)
+        {
+            for ( int i = 0; i < componentsToDisable.Length; i++ )
+            {
+                componentsToDisable[i].enabled = false;
+            }
+        }
+
     }
 
     // Update is called once per frame
