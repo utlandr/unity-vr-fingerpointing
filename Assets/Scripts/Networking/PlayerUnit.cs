@@ -6,26 +6,11 @@ using UnityEngine.Networking;
 public class PlayerUnit : NetworkBehaviour
 {
 
-    public GameObject playerCamera = null;
-
-    // Setup components/objects to disable (i.e. only the
-    // local client instance should have)
-    [SerializeField]
-    private Behaviour[] componentsToDisable;
 
     // Start is called before the first frame update
     void Start()
     {
-        if (isLocalPlayer == false)
-        {
-            for ( int i = 0; i < componentsToDisable.Length; i++ )
-            {
-                componentsToDisable[i].enabled = false;
-            }
-        }
-        else{
-
-        }    
+       
     }
 
     // Update is called once per frame

@@ -7,14 +7,26 @@ using UnityEngine;
 public class PlayerConnectionObject : NetworkBehaviour
 {
     public GameObject PlayerUnitPrefab;
+    
+    // Setup components/objects to disable (i.e. only the
+    // local client instance should have)
+    [SerializeField]
+    Behaviour[] componentsToDisable;
+
 
     void Start()
     {
-        if( isLocalPlayer == false )
+        if (isLocalPlayer == false)
         {
-            return;
+            for ( int i = 0; i < componentsToDisable.Length; i++ )
+            {
+                componentsToDisable[i].enabled = false;
+            }
         }
+        else
+        {
 
+        }    
         // Spawn unit
         Debug.Log("PlayerObject::Start -- VR Unit has entered the scene.");
         CmdSpawnMyUnit();
