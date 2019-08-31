@@ -19,13 +19,6 @@ public class PlayerUnit : NetworkBehaviour
                 {
                     componentsToDisable[i].enabled = false;
                 }
-                return;
             }
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
     }
 }
