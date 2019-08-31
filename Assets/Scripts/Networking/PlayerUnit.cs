@@ -14,7 +14,7 @@ public class PlayerUnit : NetworkBehaviour
     {
         if( isLocalPlayer == false )
             {
-                Debug.Log("killed a thing");
+                Debug.Log("PlayerUnit::Start -- Disabled components on PlayerUnit prefab");
                 for ( int i = 0; i < componentsToDisable.Length; i++ )
                 {
                     componentsToDisable[i].enabled = false;
