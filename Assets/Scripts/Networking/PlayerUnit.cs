@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Networking;
+using Mirror;
 
 public class PlayerUnit : NetworkBehaviour
 {
@@ -16,15 +16,17 @@ public class PlayerUnit : NetworkBehaviour
     
     //Awake to create tracked child components
     void Awake()
-    {
-        Transform[] childList = trackBody.GetComponentsInChildren<Transform>();
+    {            
+        // Transform[] childList = trackBody.GetComponentsInChildren<Transform>();
 
-            
-           for(int i=1; i < childList.Length; i++)
-           {
-               NetworkTransformChild newTransformChild = gameObject.AddComponent<NetworkTransformChild>(); 
-               newTransformChild.target = childList[i].transform;
-           }
+        // // Adding alot of components on a single object... not sure if it will work
+        // // TODO: Think about how to do this better.
+        // for(int i=1; i < childList.Length; i++)
+        // {
+        //     NetworkTransformChild newTransformChild = gameObject.AddComponent<NetworkTransformChild>(); 
+        //     newTransformChild.target = childList[i].transform;
+        //     newTransformChild.enabled = true;
+        // }
     }
 
     // Start is called before the first frame update
@@ -54,17 +56,6 @@ public class PlayerUnit : NetworkBehaviour
                 // Enable
                 componentsToDisable[9].enabled = true;
                 componentsToDisable[10].enabled = true;
-
-
-                Transform[] childList = trackBody.GetComponentsInChildren<Transform>();
-
-                // Adding alot of components on a single object... not sure if it will work
-                // TODO: Think about how to do this better.
-                for(int i=1; i < childList.Length; i++)
-                {
-                    NetworkTransformChild newTransformChild = gameObject.AddComponent<NetworkTransformChild>(); 
-                    newTransformChild.target = childList[i].transform;
-                }
             }
         }
     }
