@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using Mirror;
 
 [RequireComponent(typeof(Animator))]
 
@@ -9,6 +10,9 @@ public class IKControl : MonoBehaviour {
     //  Public Input Objects
     
     public bool ikActive = false;
+
+    [Header("Full Body")]
+    public GameObject fullBody = null;
 
     [Header("Hand IK Targets")]
     public Transform leftHandObj = null;
@@ -61,7 +65,7 @@ public class IKControl : MonoBehaviour {
         if (headObj != null)
         {
             // An offset can be applied depending on the model measurements
-            gameObject.transform.position = headObj.transform.position - new Vector3(xOffset, yOffset, zOffset);
+            fullBody.transform.position = headObj.transform.position - new Vector3(xOffset, yOffset, zOffset);
         }  
     }
     
