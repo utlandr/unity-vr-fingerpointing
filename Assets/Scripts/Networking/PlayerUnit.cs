@@ -56,7 +56,7 @@ public class PlayerUnit : NetworkBehaviour
                 componentsToDisable[9].enabled = false;
                 componentsToDisable[10].enabled = false;
 
-                // Enable
+                // // Enable
                 componentsToDisable[9].enabled = true;
                 componentsToDisable[10].enabled = true;
             }
