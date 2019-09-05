@@ -5294,7 +5294,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   syncInterval: 0.1
   compressRotation: 1
-  target: {fileID: 6263257155686567665}
+  target: {fileID: 6263257155466058889}
 --- !u!114 &8583109563322380915
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5309,7 +5309,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   syncInterval: 0.1
   compressRotation: 1
-  target: {fileID: 6263257155520030352}
+  target: {fileID: 6263257155466131541}
 --- !u!114 &8412616353581206690
 MonoBehaviour:
   m_ObjectHideFlags: 0
