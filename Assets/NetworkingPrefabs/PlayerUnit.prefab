@@ -5025,12 +5025,11 @@ GameObject:
   - component: {fileID: 5690697298019234921}
   - component: {fileID: -6658327408577086175}
   - component: {fileID: -6282871949483016320}
-  - component: {fileID: 436605283531683579}
-  - component: {fileID: 3805042271960969590}
   - component: {fileID: 4177032909153765414}
   - component: {fileID: 8583109563322380915}
   - component: {fileID: 8412616353581206690}
   - component: {fileID: 8931673324124861794}
+  - component: {fileID: 3663965713858464427}
   m_Layer: 9
   m_Name: PlayerUnit
   m_TagString: Untagged
@@ -5232,54 +5231,6 @@ MonoBehaviour:
   syncInterval: 0.1
   compressRotation: 1
   target: {fileID: 6261616255929743549}
---- !u!95 &436605283531683579
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6263257155466315103}
-  m_Enabled: 0
-  m_Avatar: {fileID: 9000000, guid: 21a9b33330b01b54db4bcaa6a277be7a, type: 3}
-  m_Controller: {fileID: 9100000, guid: 2fa27adbe3bd8a943a16df9fcaccdb19, type: 2}
-  m_CullingMode: 1
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 1
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &3805042271960969590
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6263257155466315103}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0c4489236f59e9841980e07835273676, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ikActive: 0
-  fullBody: {fileID: 6263257155025918671}
-  leftHandObj: {fileID: 6263257155520030352}
-  rightHandObj: {fileID: 6263257155686567665}
-  xRotate: 0
-  yRotate: 0
-  zRotate: -70
-  leftFootObj: {fileID: 6263257154222088636}
-  rightFootObj: {fileID: 6263257153938194729}
-  xPos: 0.15
-  yPos: 0.1
-  zPos: 0.2
-  headObj: {fileID: 6263257155025918669}
-  shoulderObj: {fileID: 6263257155025918673}
-  xOffset: 0
-  yOffset: 1.6
-  zOffset: 0
 --- !u!114 &4177032909153765414
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5340,6 +5291,20 @@ MonoBehaviour:
   syncInterval: 0.1
   compressRotation: 1
   target: {fileID: 6263257153938194729}
+--- !u!114 &3663965713858464427
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6263257155466315103}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f6f3bf89aa97405989c802ba270f815, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  syncInterval: 0.1
+  animator: {fileID: 6263257155025918620}
 --- !u!1 &6263257155466315363
 GameObject:
   m_ObjectHideFlags: 0
