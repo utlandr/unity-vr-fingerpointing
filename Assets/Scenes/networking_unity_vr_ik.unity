@@ -218,7 +218,7 @@ MonoBehaviour:
   playerPrefab: {fileID: 6263257155466315103, guid: 80df1084cbdcc9e4e9caff8c7fcdcd39,
     type: 3}
   autoCreatePlayer: 1
-  playerSpawnMethod: 0
+  playerSpawnMethod: 1
   spawnPrefabs: []
 --- !u!4 &425811116
 Transform:
@@ -328,7 +328,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!64 &1727335166
 MeshCollider:
   m_ObjectHideFlags: 0
