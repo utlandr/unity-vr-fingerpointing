@@ -37,7 +37,10 @@ public class PlayerUnit : NetworkBehaviour
                 Debug.Log("PlayerUnit::Start -- Disabled components on PlayerUnit prefab");
                 for ( int i = 0; i < componentsToDisable.Length; i++ )
                 {
-                    componentsToDisable[i].enabled = false;
+                    if(componentsToDisable[i] != null)
+                    {
+                        componentsToDisable[i].enabled = false;
+                    }
                 }
         }
         else
