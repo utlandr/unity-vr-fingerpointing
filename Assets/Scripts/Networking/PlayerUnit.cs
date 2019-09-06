@@ -39,7 +39,7 @@ public class PlayerUnit : NetworkBehaviour
                 {
                     if(componentsToDisable[i] != null)
                     {
-                        componentsToDisable[i].enabled = false;
+                        Destroy(componentsToDisable[i]);
                     }
                 }
         }
