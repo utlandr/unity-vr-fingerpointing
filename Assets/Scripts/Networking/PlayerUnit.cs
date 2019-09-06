@@ -53,12 +53,12 @@ public class PlayerUnit : NetworkBehaviour
                 // the hacky solution stays...
 
                 // Disable
-                componentsToDisable[9].enabled = false;
-                componentsToDisable[10].enabled = false;
+                // componentsToDisable[9].enabled = false;
+                // componentsToDisable[10].enabled = false;
 
-                // // Enable
-                componentsToDisable[9].enabled = true;
-                componentsToDisable[10].enabled = true;
+                // // // Enable
+                // componentsToDisable[9].enabled = true;
+                // componentsToDisable[10].enabled = true;
             }
         }
     }
