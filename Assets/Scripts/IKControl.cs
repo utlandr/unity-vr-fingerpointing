@@ -87,7 +87,7 @@ public class IKControl : MonoBehaviour {
         
         // Shoulder translation for better pointing (This is in place of shoulder IK)
         right.position += new Vector3(0, 0, 0.05f);
-        left.position += new Vector3(0,0,0.05f);
+        left.position += new Vector3(0, 0, 0.05f);
 
     }
     //a callback for calculating IK
