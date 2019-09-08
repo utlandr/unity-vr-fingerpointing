@@ -5055,8 +5055,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   syncInterval: 0.1
   componentsToDisable:
-  - {fileID: 6245510659353235687}
   - {fileID: 8029203791859366862}
+  - {fileID: 6245510659353235687}
   - {fileID: 6304631926111840859}
   - {fileID: 6304631924724643283}
   - {fileID: 7344195266870878725}
