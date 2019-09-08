@@ -77,12 +77,12 @@ public class IKControl : MonoBehaviour {
         Transform left = animator.GetBoneTransform(HumanBodyBones.LeftShoulder);
         
 
-        // Perform feet xz plane adjustment 
+        // Perform feet adjustment 
         if (shoulderObj != null) 
         {
-            rightFootObj.position = new Vector3(headObj.transform.position.x, 0, headObj.transform.position.z ) + new Vector3(xPos, yPos, zPos);
-            leftFootObj.position = new Vector3(headObj.transform.position.x, 0, headObj.transform.position.z ) + new Vector3(-xPos, yPos, zPos);
-
+            // Y position setting + static adjustments
+            rightFootObj.position = new Vector3(rightFootObj.position.x, 0, rightFootObj.position.z ) + new Vector3(xPos, yPos, zPos);
+            leftFootObj.position = new Vector3(leftFootObj.position.x, 0, leftFootObj.position.z ) + new Vector3(-xPos, yPos, zPos);
         }
         
         // Shoulder translation for better pointing (This is in place of shoulder IK)
