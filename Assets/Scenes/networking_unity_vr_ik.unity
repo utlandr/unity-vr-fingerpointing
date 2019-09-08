@@ -208,7 +208,7 @@ MonoBehaviour:
   dontDestroyOnLoad: 1
   runInBackground: 1
   startOnHeadless: 1
-  serverTickRate: 64
+  serverTickRate: 128
   showDebugMessages: 0
   offlineScene: 
   onlineScene: 
